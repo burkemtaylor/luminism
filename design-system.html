@@ -1,208 +1,263 @@
 <html>
-  <head>
+
+<head>
     <title>luminism design system</title>
 
     <link rel="stylesheet" href="index.css" />
 
     <style></style>
-  </head>
+</head>
 
-  <body>
+<body>
     <div class="container">
-      <h1 class="uppercase">design system</h1>
+        <h1 class="uppercase" style="margin-top: 2rem">design system</h1>
 
-      <section id="colors" style="margin: 4rem 0">
-        <h2 class="numbered-title uppercase"><span>01</span> colors</h2>
-        <div class="flex">
-          <div style="flex-grow: 1">
-            <div
-              class="bg-dark text-white fs-500"
-              style="padding: 3rem 1rem 1rem; border: 1px solid white"
-            >
-              #271616
-            </div>
-            <p><span class="text-accent">RGB</span> 39, 22, 22</p>
-            <p><span class="text-accent">HSL</span> 0°, 29%, 12%</p>
-          </div>
-          <div style="flex-grow: 1">
-            <div
-              class="bg-accent text-dark fs-500"
-              style="padding: 3rem 1rem 1rem; border: 1px solid white"
-            >
-              #BEA650
-            </div>
-            <p><span class="text-accent">RGB</span> 190 166 80</p>
-            <p><span class="text-accent">HSL</span> 47°, 46%, 53%</p>
-          </div>
-          <div style="flex-grow: 1">
-            <div
-              class="bg-white text-dark fs-500"
-              style="padding: 3rem 1rem 1rem; border: 1px solid white"
-            >
-              #FFFFFF
-            </div>
-            <p><span class="text-accent">RGB</span> 255, 255, 255</p>
-            <p><span class="text-accent">HSL</span> 0°, 0%, 100%</p>
-          </div>
-        </div>
-      </section>
+        <section id="colors" style="margin: 2rem 0">
+            <form class="flow form-controls">
+                <h2 class="numbered-title uppercase"><span>01</span> colors</h2>
 
-      <section id="typography" style="margin: 4rem 0">
-        <h2 class="numbered-title"><span>02 </span>Typography</h2>
-        <div class="flex">
-          <div class="flow" style="flex-basis: 100%">
-            <div>
-              <p class="text-accent">h1 - alte haas grotesk bold - 150px</p>
-              <p class="fs-900 uppercase">Poser</p>
-            </div>
-            <div>
-              <p class="text-accent">h2 - alte haas grotesk bold - 100px</p>
-              <p class="fs-800 uppercase">Error</p>
-            </div>
-            <div>
-              <p class="text-accent">h3 - alte haas grotesk bold - 56px</p>
-              <p class="fs-700 uppercase">Don't Jinx It</p>
-            </div>
-            <div>
-              <p class="text-accent">h4 - alte haas grotesk bold - 32px</p>
-              <p class="fs-600 uppercase">I Wanna Be a Genius</p>
-            </div>
-            <div>
-              <p class="text-accent">
-                h5 - alte haas grotesk regular - 28px - 4.75 character space
-              </p>
-              <p class="text-white fs-500 uppercase letter-spacing-1">
-                I Think you're getting bored
-              </p>
-            </div>
-          </div>
+                <div id="colors-1" class="flex">
+                    <label class="sr-only" for="color">rust theme</label>
+                    <input type="radio" name="color" id="rust" style="margin-top: 2.75rem" checked>
+                    <div style="flex-grow: 1">
+                        <div class="fs-500"
+                            style="padding: 3rem 1rem 1rem; border: 1px solid hsl(var(--clr-contrast)); background-color: hsl(var(--rust-bg)); color:white">
+                            #271616
+                        </div>
+                        <p><span class="text-accent">RGB</span> 39, 22, 22</p>
+                        <p><span class="text-accent">HSL</span> 0°, 29%, 12%</p>
+                    </div>
+                    <div style="flex-grow: 1">
+                        <div class="bg-accent text-dark fs-500"
+                            style="padding: 3rem 1rem 1rem; border: 1px solid hsl(var(--clr-contrast)); background-color: hsl(var(--rust-accent)); color:black">
+                            #BEA650
+                        </div>
+                        <p><span class="text-accent">RGB</span> 190, 166, 80</p>
+                        <p><span class="text-accent">HSL</span> 47°, 46%, 53%</p>
+                    </div>
+                    <div style="flex-grow: 1">
+                        <div class="bg-white text-dark fs-500"
+                            style="padding: 3rem 1rem 1rem; border: 1px solid hsl(var(--clr-contrast)); background-color: white; color:black">
+                            #FFFFFF
+                        </div>
+                        <p><span class="text-accent">RGB</span> 255, 255, 255</p>
+                        <p><span class="text-accent">HSL</span> 0°, 0%, 100%</p>
+                    </div>
+                </div>
+                <div id="colors-2" class="flex">
+                    <label class="sr-only" for="color">sleep theme</label>
+                    <input type="radio" name="color" id="sleep" style="margin-top: 2.75rem">
+                    <div style="flex-grow: 1">
+                        <div class="fs-500"
+                            style="padding: 3rem 1rem 1rem; border: 1px solid hsl(var(--clr-contrast)); background-color: hsl(var(--sleep-bg)); color:white">
+                            #1B1D37
+                        </div>
+                        <p><span class="text-accent">RGB</span> 27, 29, 55</p>
+                        <p><span class="text-accent">HSL</span> 234°, 35%, 16%</p>
+                    </div>
+                    <div style="flex-grow: 1">
+                        <div class="fs-500"
+                            style="padding: 3rem 1rem 1rem; border: 1px solid hsl(var(--clr-contrast)); background-color: hsl(var(--sleep-accent)); color:black">
+                            #D9E368
+                        </div>
+                        <p><span class="text-accent">RGB</span> 217, 227, 104</p>
+                        <p><span class="text-accent">HSL</span> 65°, 69%, 65%</p>
+                    </div>
+                    <div style="flex-grow: 1">
+                        <div class="fs-500"
+                            style="padding: 3rem 1rem 1rem; border: 1px solid hsl(var(--clr-contrast)); background-color: white; color:black">
+                            #FFFFFF
+                        </div>
+                        <p><span class="text-accent">RGB</span> 255, 255, 255</p>
+                        <p><span class="text-accent">HSL</span> 0°, 0%, 100%</p>
+                    </div>
+                </div>
+                <div id="colors-3" class="flex">
+                    <label class="sr-only" for="color">nkk theme</label>
+                    <input type="radio" name="color" id="nkk" style="margin-top: 2.75rem">
+                    <div style="flex-grow: 1">
+                        <div class="fs-500"
+                            style="padding: 3rem 1rem 1rem; border: 1px solid hsl(var(--clr-contrast)); background-color: hsl(var(--nkk-bg)); color:black">
+                            #E7F3FE
+                        </div>
+                        <p><span class="text-accent">RGB</span> 231, 243, 254</p>
+                        <p><span class="text-accent">HSL</span> 208°, 91%, 95%</p>
+                    </div>
+                    <div style="flex-grow: 1">
+                        <div class="fs-500"
+                            style="padding: 3rem 1rem 1rem; border: 1px solid hsl(var(--clr-contrast)); background-color: hsl(var(--nkk-accent)); color:white">
+                            #F08AB4
+                        </div>
+                        <p><span class="text-accent">RGB</span> 240, 138, 180</p>
+                        <p><span class="text-accent">HSL</span> 335°, 77%, 74%</p>
+                    </div>
+                    <div style="flex-grow: 1">
+                        <div class="fs-500"
+                            style="padding: 3rem 1rem 1rem; border: 1px solid hsl(var(--clr-contrast)); background-color: black; color:white">
+                            #000000
+                        </div>
+                        <p><span class="text-accent">RGB</span> 0, 0, 0</p>
+                        <p><span class="text-accent">HSL</span> 0°, 0%, 0%</p>
+                    </div>
+                </div>
+            </form>
 
-          <div class="flow" style="flex-basis: 100%; --flow-space: 2rem">
+        </section>
+
+        <section id="typography" style="margin: 4rem 0">
+            <h2 class="numbered-title"><span>02 </span>Typography</h2>
+            <div class="flex">
+                <div class="flow" style="flex-basis: 100%">
+                    <div>
+                        <p class="text-accent">h1 - alte haas grotesk bold - 150px</p>
+                        <p class="fs-900 uppercase">Poser</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">h2 - alte haas grotesk bold - 100px</p>
+                        <p class="fs-800 uppercase">Error</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">h3 - alte haas grotesk bold - 56px</p>
+                        <p class="fs-700 uppercase">Don't Jinx It</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">h4 - alte haas grotesk bold - 32px</p>
+                        <p class="fs-600 uppercase">I Wanna Be a Genius</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">
+                            h5 - alte haas grotesk regular - 28px - 4.75 character space
+                        </p>
+                        <p class="text-white fs-500 uppercase letter-spacing-1">
+                            I Think you're getting bored
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flow" style="flex-basis: 100%; --flow-space: 2rem">
+                    <div>
+                        <p class="text-accent">
+                            subheading 1 - alte haas grotesk regular - 28px
+                        </p>
+                        <p class="fs-500 uppercase">not that hard</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">
+                            subheading 2 - alte haas grotesk regular - 14px - 2.35 character
+                            space
+                        </p>
+                        <p class="fs-200 uppercase letter-spacing-3">i should grow up</p>
+                    </div>
+                    <div>
+                        <p class="text-accent">
+                            nav text - alte haas grotesk - 16px - 2.7 character space
+                        </p>
+                        <p class="fs-300 uppercase letter-spacing-2">
+                            how do you sleep at night?
+                        </p>
+                    </div>
+                    <div>
+                        <p class="text-accent">body text</p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi
+                            neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium,
+                            ligula sollicitudin laoreet viverra, tortor libero sodales leo,
+                            eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo.
+                            Suspendisse potenti.Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh
+                            nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel,
+                            nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor
+                            libero sodales leo, eget blandit nunc tortor eu nibh. Nullam
+                            mollis. Ut justo. Suspendisse potenti.Lorem ipsum dolor sit
+                            amet, consectetuer adipiscing elit. Phasellus hendrerit.
+                            Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
+                            dapibus id, mattis vel, nisi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="flow" id="interactive-elements">
+            <h2 class="numbered-title"><span>03</span> interactive elements</h2>
+
+            <!-- navigation -->
             <div>
-              <p class="text-accent">
-                subheading 1 - alte haas grotesk regular - 28px
-              </p>
-              <p class="fs-500 uppercase">not that hard</p>
-            </div>
-            <div>
-              <p class="text-accent">
-                subheading 2 - alte haas grotesk regular - 14px - 2.35 character
-                space
-              </p>
-              <p class="fs-200 uppercase letter-spacing-3">i should grow up</p>
-            </div>
-            <div>
-              <p class="text-accent">
-                nav text - alte haas grotesk - 16px - 2.7 character space
-              </p>
-              <p class="fs-300 uppercase letter-spacing-2">
-                how do you sleep at night?
-              </p>
-            </div>
-            <div>
-              <p class="text-accent">body text</p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi
-                neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium,
-                ligula sollicitudin laoreet viverra, tortor libero sodales leo,
-                eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo.
-                Suspendisse potenti.Lorem ipsum dolor sit amet, consectetuer
-                adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh
-                nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel,
-                nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor
-                libero sodales leo, eget blandit nunc tortor eu nibh. Nullam
-                mollis. Ut justo. Suspendisse potenti.Lorem ipsum dolor sit
-                amet, consectetuer adipiscing elit. Phasellus hendrerit.
-                Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
-                dapibus id, mattis vel, nisi.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="flow" id="interactive-elements">
-        <h2 class="numbered-title"><span>03</span> interactive elements</h2>
-
-        <!-- navigation -->
-        <div>
-          <nav>
-            <ul class="primary-navigation hover-indicators flex">
-              <li class="active">
-                <a class="uppercase text-white letter-spacing-2" href="#">
-                  <span>00</span>Active
-                </a>
-              </li>
-              <li>
-                <a class="uppercase text-white letter-spacing-2" href="#">
-                  <span>01</span>Hovered
-                </a>
-              </li>
-              <li>
-                <a class="uppercase text-white letter-spacing-2" href="#">
-                  <span>02</span>
-                  Idle
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="flex">
-          <div style="margin-top: 2rem">
-            <!-- listen button -->
-            <a
-              href="#"
-              data-content="listen"
-              class="large-button uppercase fs-600 text-white bg-dark"
-            >
-              listen
-            </a>
-          </div>
-
-          <div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem">
-            <!-- Tabs -->
-            <div class="tab-list hover-indicators flex">
-              <button
-                aria-selected="true"
-                class="uppercase text-accent letter-spacing-2 bg-dark"
-              >
-                About
-              </button>
-              <button
-                aria-selected="false"
-                class="uppercase text-accent letter-spacing-2 bg-dark"
-              >
-                Music
-              </button>
-              <button
-                aria-selected="false"
-                class="uppercase text-accent letter-spacing-2 bg-dark"
-              >
-                Store
-              </button>
+                <nav>
+                    <ul class="primary-navigation hover-indicators flex">
+                        <li class="active">
+                            <a class="uppercase text-white letter-spacing-2" href="#">
+                                <span>00</span>Active
+                            </a>
+                        </li>
+                        <li>
+                            <a class="uppercase text-white letter-spacing-2" href="#">
+                                <span>01</span>Hovered
+                            </a>
+                        </li>
+                        <li>
+                            <a class="uppercase text-white letter-spacing-2" href="#">
+                                <span>02</span>
+                                Idle
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
-            <!-- Dots -->
-            <div class="dot-indicators flex">
-              <button aria-selected="true">
-                <span class="sr-only">label</span>
-              </button>
-              <button aria-selected="false">
-                <span class="sr-only">label</span>
-              </button>
-              <button aria-selected="false">
-                <span class="sr-only">label</span>
-              </button>
-            </div>
+            <div class="flex">
+                <div style="margin-top: 2rem">
+                    <!-- listen button -->
+                    <a href="#" data-content="listen" class="large-button uppercase fs-600 text-white bg-dark">
+                        listen
+                    </a>
+                </div>
 
-            <!-- Numbers -->
-          </div>
-        </div>
-      </section>
+                <div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem">
+                    <!-- Tabs -->
+                    <div class="tab-list hover-indicators flex">
+                        <button aria-selected="true" class="uppercase text-accent letter-spacing-2 bg-dark">
+                            About
+                        </button>
+                        <button aria-selected="false" class="uppercase text-accent letter-spacing-2 bg-dark">
+                            Music
+                        </button>
+                        <button aria-selected="false" class="uppercase text-accent letter-spacing-2 bg-dark">
+                            Store
+                        </button>
+                    </div>
+
+                    <!-- Dots -->
+                    <div class="dot-indicators flex">
+                        <button aria-selected="true">
+                            <span class="sr-only">label</span>
+                        </button>
+                        <button aria-selected="false">
+                            <span class="sr-only">label</span>
+                        </button>
+                        <button aria-selected="false">
+                            <span class="sr-only">label</span>
+                        </button>
+                    </div>
+
+                    <!-- Form Controls -->
+                    <form class="form-controls">
+                        <fieldset>
+                            <input name="example" type="radio" checked></input>
+                            <label for="example">label 1</label>
+                            <input name="example" type="radio" aria-selected="false"></input>
+                            <label for="example">label 2</label>
+                            <input name="example" type="radio" aria-selected="false"></input>
+                            <label for="example">label 3</label>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script src="index.pack.js"></script>
-  </body>
+</body>
+
 </html>
