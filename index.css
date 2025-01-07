@@ -2,37 +2,38 @@
 /* Custom Properties                                      */
 /* ------------------------------------------------------ */
 @font-face {
-    font-family: 'alte-haas-grotesk';
-    src: url('fonts/AlteHaasGroteskRegular.ttf') format('truetype');
-    font-weight: normal
+  font-family: "alte-haas-grotesk";
+  src: url("fonts/AlteHaasGroteskRegular.ttf") format("truetype");
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: 'alte-haas-grotesk';
-    src: url('fonts/AlteHaasGroteskBold.ttf') format('truetype');
-    font-weight: bold;
+  font-family: "alte-haas-grotesk";
+  src: url("fonts/AlteHaasGroteskBold.ttf") format("truetype");
+  font-weight: bold;
 }
 
-
 :root {
-    /* colors */
-    --clr-dark: 215 100% 6%;
-    --clr-light: 49 68% 67%;
-    --clr-white: 0 0% 100%;
+  /* --clr-dark: 215 100% 6%;
+    --clr-light: 49 68% 67%; */
 
-    /* font-sizes */
-    --fs-900: 9.375rem;
-    --fs-800: 6.25rem;
-    --fs-700: 3.5rem;
-    --fs-600: 2rem;
-    --fs-500: 1.75rem;
-    --fs-400: 1.125rem;
-    --fs-300: 1rem;
-    --fs-200: 0.875rem;
+  /* colors */
+  --clr-dark: 0 29% 12%;
+  --clr-light: 47 46% 53%;
+  --clr-white: 0 0% 100%;
 
-    /* font-families */ 
-    --ff-sans: 'alte-haas-grotesk', sans-serif;
+  /* font-sizes */
+  --fs-900: 9.375rem;
+  --fs-800: 6.25rem;
+  --fs-700: 3.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.75rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
 
+  /* font-families */
+  --ff-sans: "alte-haas-grotesk", sans-serif;
 }
 
 /* ------------------------------------------------------ */
@@ -65,27 +66,26 @@ h5,
 p,
 figure,
 picture {
-    margin: 0; 
+  margin: 0;
 }
 
 h1,
 h2,
 h3 {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 
 h4,
 h5,
-h6, 
+h6,
 p,
 body {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -94,20 +94,27 @@ body {
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
   color: hsl(var(--clr-white));
-  background-color: hsl( var(--clr-dark) );
+  background-color: hsl(var(--clr-dark));
   min-height: 100vh;
   line-height: 1.5;
 }
 
 /* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
   line-height: 1.1;
 }
 
 /* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-wrap: balance;
 }
 
@@ -125,8 +132,10 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
+input,
+button,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
 }
@@ -156,92 +165,248 @@ textarea:not([rows]) {
 /* ------------------------------------------------------ */
 
 .flex {
-    display: flex;
-    gap: var(--gap, 1rem);
+  display: flex;
+  gap: var(--gap, 1rem);
 }
 
 .grid {
-    display: grid;
-    gap: var(--gap, 1rem);
+  display: grid;
+  gap: var(--gap, 1rem);
 }
 
 .flow > *:where(:not(:first-child)) {
-    margin-top: var(--flow-space, 1rem);
+  margin-top: var(--flow-space, 1rem);
 
-    /* Debugging util */
-    /* outline: 1px solid red; */
+  /* Debugging util */
+  /* outline: 1px solid red; */
 }
 
 .container {
-    padding-inline: 0 2em;
-    margin-inline: auto;
-    max-width: 80rem; /* TODO: may need to tweak this */
+  padding-inline: 0 2em;
+  margin-inline: auto;
+  max-width: 80rem; /* TODO: may need to tweak this */
 }
 
 .sr-only {
-    position:absolute;
-    width: 1px;
-    height: 1px;
-    padding: 9;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    white-space: nowrap; /* added line */
-    border: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 9;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
 }
 
-
 .box {
-    background-color: lightblue;
-    padding: 3rem;
+  background-color: lightblue;
+  padding: 3rem;
 }
 
 /* colors */
 
-.bg-dark { background-color: hsl(var(--clr-dark)); }
-.bg-accent { background-color: hsl(var(--clr-light)); }
-.bg-white { background-color: hsl(var(--clr-white)); }
+.bg-dark {
+  background-color: hsl(var(--clr-dark));
+}
+.bg-accent {
+  background-color: hsl(var(--clr-light));
+}
+.bg-white {
+  background-color: hsl(var(--clr-white));
+}
 
-.text-dark { color: hsl(var(--clr-dark)); }
-.text-accent { color: hsl(var(--clr-light)); }
-.text-white { color: hsl(var(--clr-white)); }
+.text-dark {
+  color: hsl(var(--clr-dark));
+}
+.text-accent {
+  color: hsl(var(--clr-light));
+}
+.text-white {
+  color: hsl(var(--clr-white));
+}
 
 /* typography */
 
-.ff-sans { font-family: var(--ff-sans); }
+.ff-sans {
+  font-family: var(--ff-sans);
+}
 
-.letter-spacing-1 { letter-spacing: 4.75px; } 
-.letter-spacing-2 { letter-spacing: 2.7px; } 
-.letter-spacing-3 { letter-spacing: 2.35px; } 
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+.letter-spacing-3 {
+  letter-spacing: 2.35px;
+}
 
-.uppercase { text-transform: uppercase; }
-.lowercase { text-transform: lowercase; }
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
 
-.fs-900 { font-size: var(--fs-900); }
-.fs-800 { font-size: var(--fs-800); }
-.fs-700 { font-size: var(--fs-700); }
-.fs-600 { font-size: var(--fs-600); }
-.fs-500 { font-size: var(--fs-500); }
-.fs-400 { font-size: var(--fs-400); }
-.fs-300 { font-size: var(--fs-300); }
-.fs-200 { font-size: var(--fs-200); }
+.fs-900 {
+  font-size: var(--fs-900);
+}
+.fs-800 {
+  font-size: var(--fs-800);
+}
+.fs-700 {
+  font-size: var(--fs-700);
+}
+.fs-600 {
+  font-size: var(--fs-600);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-200 {
+  font-size: var(--fs-200);
+}
 
 .fs-900,
 .fs-800,
 .fs-700,
 .fs-600 {
-    line-height: 1.1;
+  line-height: 1.1;
 }
 
 .numbered-title {
-    font-family: var(--ff-sans-cond);
-    font-size: var(--fs-500);
-    text-transform: uppercase;
-    letter-spacing: 4.72px;
+  font-family: var(--ff-sans-cond);
+  font-size: var(--fs-500);
+  text-transform: uppercase;
+  letter-spacing: 4.72px;
 }
 
 .numbered-title span {
-    margin-right: .5em;
-    font-weight: 700;
-    color: hsl( var(--clr-white) / .25);
+  margin-right: 0.5em;
+  font-weight: 700;
+  color: hsl(var(--clr-white) / 0.25);
+}
+
+/* ------------------------------------------------------ */
+/* Components                                             */
+/* ------------------------------------------------------ */
+
+/* Large Button */
+
+.large-button {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  padding: 0 2em;
+  aspect-ratio: 2 / 1;
+}
+
+.large-button::before {
+  position: absolute;
+  content: attr(data-content);
+  color: hsl(var(--clr-dark));
+  clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+  transition: clip-path 250ms ease;
+}
+
+.large-button::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  background: hsl(var(--clr-light));
+  width: 0;
+  height: 100%;
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  transition: opacity 250ms linear, width 250ms linear;
+}
+
+.large-button:hover::before,
+.large-button:focus::before {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.large-button:hover::after,
+.large-button:focus::after {
+  opacity: 1;
+  color: hsl(var(--clr-dark));
+  width: 100%;
+}
+
+/* Primary Navigation */
+
+.primary-navigation {
+  --gap: 8rem;
+  --underline-gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a > span {
+  font-weight: 700;
+  margin-right: 0.5em;
+}
+
+/* Hover Indicators */
+
+.hover-indicators > * {
+  padding: var(--underline-gap, 1rem) 0;
+  border: 0;
+  border-bottom: 0.2rem solid hsl(var(--clr-white) / 0);
+}
+
+.hover-indicators > .active,
+.hover-indicators > [aria-selected="true"] {
+  color: hsl(var(--clr-white));
+  border-color: hsl(var(--clr-white));
+}
+
+.hover-indicators > li:hover,
+.hover-indicators > button:hover,
+.hover-indicators > li:focus,
+.hover-indicators > button:focus {
+  border-color: hsl(var(--clr-white) / 0.5);
+  color: hsl(var(--clr-white) / 0.5);
+  cursor: pointer;
+}
+
+/* Tab list */
+
+.tab-list {
+  --gap: 2.5rem;
+}
+
+/* Dot Indicators */
+
+.dot-indicators > * {
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  padding: 0.5em;
+  background-color: hsl(var(--clr-white) / 0.25);
+}
+
+.dot-indicators > button:hover,
+.dot-indicators > button:focus {
+  background-color: hsl(var(--clr-white) / 0.5);
+}
+
+.dot-indicators > [aria-selected="true"] {
+  background-color: hsl(var(--clr-white));
 }

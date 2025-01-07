@@ -6,6 +6,7 @@
 
     <style></style>
   </head>
+
   <body>
     <div class="container">
       <h1 class="uppercase">design system</h1>
@@ -18,20 +19,20 @@
               class="bg-dark text-white fs-500"
               style="padding: 3rem 1rem 1rem; border: 1px solid white"
             >
-              #000D1F
+              #271616
             </div>
-            <p><span class="text-accent">RGB</span> 0, 13, 31</p>
-            <p><span class="text-accent">HSL</span> 215°, 100%, 6%</p>
+            <p><span class="text-accent">RGB</span> 39, 22, 22</p>
+            <p><span class="text-accent">HSL</span> 0°, 29%, 12%</p>
           </div>
           <div style="flex-grow: 1">
             <div
               class="bg-accent text-dark fs-500"
               style="padding: 3rem 1rem 1rem; border: 1px solid white"
             >
-              #E4CF72
+              #BEA650
             </div>
-            <p><span class="text-accent">RGB</span> 228 207 114</p>
-            <p><span class="text-accent">HSL</span> 49°, 68%, 67%</p>
+            <p><span class="text-accent">RGB</span> 190 166 80</p>
+            <p><span class="text-accent">HSL</span> 47°, 46%, 53%</p>
           </div>
           <div style="flex-grow: 1">
             <div
@@ -125,17 +126,76 @@
         <h2 class="numbered-title"><span>03</span> interactive elements</h2>
 
         <!-- navigation -->
-        <div></div>
+        <div>
+          <nav>
+            <ul class="primary-navigation hover-indicators flex">
+              <li class="active">
+                <a class="uppercase text-white letter-spacing-2" href="#">
+                  <span>00</span>Active
+                </a>
+              </li>
+              <li>
+                <a class="uppercase text-white letter-spacing-2" href="#">
+                  <span>01</span>Hovered
+                </a>
+              </li>
+              <li>
+                <a class="uppercase text-white letter-spacing-2" href="#">
+                  <span>02</span>
+                  Idle
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
 
         <div class="flex">
-          <div>
-            <!-- explore button -->
+          <div style="margin-top: 2rem">
+            <!-- listen button -->
+            <a
+              href="#"
+              data-content="listen"
+              class="large-button uppercase fs-600 text-white bg-dark"
+            >
+              listen
+            </a>
           </div>
 
-          <div>
+          <div class="flow" style="margin-bottom: 50vh; --flow-space: 4rem">
             <!-- Tabs -->
+            <div class="tab-list hover-indicators flex">
+              <button
+                aria-selected="true"
+                class="uppercase text-accent letter-spacing-2 bg-dark"
+              >
+                About
+              </button>
+              <button
+                aria-selected="false"
+                class="uppercase text-accent letter-spacing-2 bg-dark"
+              >
+                Music
+              </button>
+              <button
+                aria-selected="false"
+                class="uppercase text-accent letter-spacing-2 bg-dark"
+              >
+                Store
+              </button>
+            </div>
 
             <!-- Dots -->
+            <div class="dot-indicators flex">
+              <button aria-selected="true">
+                <span class="sr-only">label</span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only">label</span>
+              </button>
+              <button aria-selected="false">
+                <span class="sr-only">label</span>
+              </button>
+            </div>
 
             <!-- Numbers -->
           </div>
