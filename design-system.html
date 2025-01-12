@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta charset="UTF-8" />
     <title>luminism design system</title>
 
     <link rel="stylesheet" href="index.css" />
@@ -17,7 +18,7 @@
                 <h2 class="numbered-title uppercase"><span>01</span> colors</h2>
 
                 <div id="colors-1" class="flex">
-                    <label class="sr-only" for="color">rust theme</label>
+                    <label class="sr-only" for="rust">rust theme</label>
                     <input type="radio" name="color" id="rust" style="margin-top: 2.75rem" checked>
                     <div style="flex-grow: 1">
                         <div class="fs-500"
@@ -45,7 +46,7 @@
                     </div>
                 </div>
                 <div id="colors-2" class="flex">
-                    <label class="sr-only" for="color">sleep theme</label>
+                    <label class="sr-only" for="sleep">sleep theme</label>
                     <input type="radio" name="color" id="sleep" style="margin-top: 2.75rem">
                     <div style="flex-grow: 1">
                         <div class="fs-500"
@@ -73,7 +74,7 @@
                     </div>
                 </div>
                 <div id="colors-3" class="flex">
-                    <label class="sr-only" for="color">nkk theme</label>
+                    <label class="sr-only" for="nkk">nkk theme</label>
                     <input type="radio" name="color" id="nkk" style="margin-top: 2.75rem">
                     <div style="flex-grow: 1">
                         <div class="fs-500"
@@ -109,48 +110,48 @@
             <div class="flex">
                 <div class="flow" style="flex-basis: 100%">
                     <div>
-                        <p class="text-accent">h1 - alte haas grotesk bold - 150px</p>
-                        <p class="fs-900 uppercase">Poser</p>
+                        <p class="text-accent">h1 - roashe - 150px</p>
+                        <h1 class="fs-900 uppercase">Poser</h1>
                     </div>
                     <div>
-                        <p class="text-accent">h2 - alte haas grotesk bold - 100px</p>
-                        <p class="fs-800 uppercase">Error</p>
+                        <p class="text-accent">h2 - roashe - 100px</p>
+                        <h2 class="fs-800 uppercase">Error</h2>
                     </div>
                     <div>
-                        <p class="text-accent">h3 - alte haas grotesk bold - 56px</p>
-                        <p class="fs-700 uppercase">Don't Jinx It</p>
+                        <p class="text-accent">h3 - roashe - 56px</p>
+                        <h3 class="fs-700 uppercase">Don't Jinx It</h3>
                     </div>
                     <div>
-                        <p class="text-accent">h4 - alte haas grotesk bold - 32px</p>
-                        <p class="fs-600 uppercase">I Wanna Be a Genius</p>
+                        <p class="text-accent">h4 - soligant - 32px</p>
+                        <h4 class="fs-600 uppercase">I Wanna Be a Genius</h4>
                     </div>
                     <div>
                         <p class="text-accent">
-                            h5 - alte haas grotesk regular - 28px - 4.75 character space
+                            h5 - soligant - 28px - 4.75 character space
                         </p>
-                        <p class="text-white fs-500 uppercase letter-spacing-1">
-                            I Think you're getting bored
-                        </p>
+                        <h5 class="text-white fs-500 uppercase letter-spacing-1">
+                            i think you're getting bored
+                        </h5>
                     </div>
                 </div>
 
                 <div class="flow" style="flex-basis: 100%; --flow-space: 2rem">
                     <div>
                         <p class="text-accent">
-                            subheading 1 - alte haas grotesk regular - 28px
+                            subheading 1 - soligant - 28px
                         </p>
                         <p class="fs-500 uppercase">not that hard</p>
                     </div>
                     <div>
                         <p class="text-accent">
-                            subheading 2 - alte haas grotesk regular - 14px - 2.35 character
+                            subheading 2 - soligant - 14px - 2.35 character
                             space
                         </p>
                         <p class="fs-200 uppercase letter-spacing-3">i should grow up</p>
                     </div>
                     <div>
                         <p class="text-accent">
-                            nav text - alte haas grotesk - 16px - 2.7 character space
+                            nav text - soligant - 16px - 2.7 character space
                         </p>
                         <p class="fs-300 uppercase letter-spacing-2">
                             how do you sleep at night?
@@ -185,9 +186,10 @@
             <!-- navigation -->
             <div>
                 <nav>
-                    <ul class="primary-navigation hover-indicators flex">
+                    <div class="nav-filler flex"></div>
+                    <ul class="primary-navigation">
                         <li class="active">
-                            <a class="uppercase text-white letter-spacing-2" href="#">
+                            <a class="uppercase text-white letter-spacing-2" aria-current="page" href="#">
                                 <span>00</span>Active
                             </a>
                         </li>
@@ -203,6 +205,7 @@
                             </a>
                         </li>
                     </ul>
+
                 </nav>
             </div>
 
@@ -244,12 +247,12 @@
                     <!-- Form Controls -->
                     <form class="form-controls">
                         <fieldset>
-                            <input name="example" type="radio" checked></input>
-                            <label for="example">label 1</label>
-                            <input name="example" type="radio" aria-selected="false"></input>
-                            <label for="example">label 2</label>
-                            <input name="example" type="radio" aria-selected="false"></input>
-                            <label for="example">label 3</label>
+                            <input id="radio-one" name="example" type="radio" checked></input>
+                            <label for="radio-one">label 1</label>
+                            <input id="radio-two" name="example" type="radio" aria-selected="false"></input>
+                            <label for="radio-two">label 2</label>
+                            <input id="radio-three" name="example" type="radio" aria-selected="false"></input>
+                            <label for="radio-three">label 3</label>
                         </fieldset>
                     </form>
                 </div>
